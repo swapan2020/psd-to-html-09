@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* GLOBAL CSS */
+:root{
+    --primary:#6bc2f1;
+    --heading:#1b1b1b;
+    --text:#a6a6a6;
+}
+.container{
+    max-width:1170px;
+    margin:0 auto;
+}
+.d-flex{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.btn{
+    display: inline-block;
+    background:var(--primary);
+    color:#fff;
+    font-size:14px;
+    text-transform:uppercase;
+    padding:13px 30px;
+}
+section{
+    padding:50px 0;
+}
+/* =============================
+    HEADER SECTION DESIGN CSS
+=============================== */
+/* mobile menu css start */
+.mobile-menu {
+    display: none;
+    font-size: 35px;
+    color: var(--primary);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+ul.menu.show {
+    left: 0;
+}
+.close-btn {
+    display:none;
+    font-size: 44px;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    right: 30px;
+    cursor: pointer;
+}
+/* mobile menu css end */
+.header{
+    background: #e1ebf1d9;
+    padding:24px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.header .logo{
+    font-size:24px;
+    color:#252525;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-right: 50px;
+}
+.header .logo span{
+    color:var(--primary);
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .menu{
+    display:flex;
+    align-items:center;
+    margin-right: auto;
+}
+.header .menu li a{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:capitalize;
+    color:#252525;
+    margin-right:25px;
+}
+p{
+    color:var(--text);
+    font-size:17px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+/* =============================
+    BANNER SECTION DESIGN CSS
+=============================== */
+.banner{
+    background: linear-gradient(rgba(106, 194, 241, 0.25), rgba(106, 194, 241, 0.25)), url(../images/home.png) no-repeat center;
+    min-height:100vh;
+    background-size: cover;
+}
+.banner .banner-content {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width:45%;
+    color:#fff;
+}
+.banner-content h2 {
+    font-size: 70px;
+    font-weight: 300;
+}
+.banner-content h2 span{
+    font-weight:500;
+}
+.banner-content h4{
+    font-size:26px;
+    margin-bottom: 18px;
+}
+.banner-content p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    width: 65%;
+}
+.banner-content .banner-btn{
+    background:#fff;
+    color:#252525;
+    font-weight:500;
+    margin-top: 20px;
+}
+/* =============================
+   CLIENT SECTION DESIGN CSS
+=============================== */
+.client .side{
+    width:calc(50% - 40px);
+}
+.client .left-side h4{
+    font-size:19px;
+    color:var(--primary);
+    font-weight:400;
+    margin-bottom: 10px;
+}
+.client .left-side h2{
+    font-size:36px;
+    color:var(--heading);
+    font-weight:500;
+    margin-bottom:20px;
+}
+/* =============================
+    WORK SECTION DESIGN CSS
+=============================== */
+.workWapper .box{
+    width:50%;
+    height:350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.workWapper .box1{
+    background:url(../images/ot1.png) no-repeat center;
+    background-size:cover;
+}
+.workWapper .box1 h3{
+    font-size:26px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.workWapper .box4{
+    background:url(../images/ot2.png) no-repeat center;
+    background-size:cover;
+}
+.workWapper .box2,
+.workWapper .box3{
+    background:var(--primary)
+}
+.workWapper .box span{
+    font-size: 18px;
+    display:block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.workWapper .box h3{
+    font-size:26px;
+    font-weight:400;
+}
+.workWapper .box p{
+    width: 75%;
+    margin:10px auto 0;
+    text-align:center;
+    font-size: 18px;
+    line-height: 22px;
+    color:#fff;
+    font-weight: 400;
+}
+/* =============================
+    SERVICES SECTION DESIGN CSS
+=============================== */
+.services .service-box{
+    width:calc(33.33% - 40px);
+    text-align:center;
+}
+.services .service-box i{
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+.services .service-box h4{
+    font-size: 18px;
+    color: var(--heading);
+    margin-bottom: 10px;
+}
+.services .service-box p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* =============================
+    PROTFOLIO SECTION DESIGN CSS
+=============================== */
+.protfolio{
+    background:#f1f1f1;
+}
+.protfolio .img-box{
+    width:calc(33.33% - 30px);
+    margin-bottom: 30px;
+}
+.protfolio .img-box img{
+    width:100%;
+    height:100%;
+}
+/* =============================
+   RIVEW SECTION DESIGN CSS
+=============================== */
+.review{
+    background:var(--primary);
+    color:#fff;
+}
+.review .client-review{
+    width:55%;
+    margin:0 auto;
+    text-align: center;
+}
+.review .client-review i{
+    font-size:55px;
+    margin-bottom: 10px;
+}
+.review .client-review p{
+    font-size:16px;
+    line-height: 20px;
+    color:#fff;
+}
+.review .client-review h4{
+    font-size:14px;
+    text-transform: uppercase;
+}
+.review .client-review span{
+    font-size:13px;
+    text-transform: uppercase;
+}
+.client-review .img-box{
+    text-align:center;
+    margin-top: 20px;
+}
+.client-review .img-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+}
+.client-review .img-box img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:50%;
+}
+button.owl-prev span,
+button.owl-next span
+ {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+}
+button.owl-prev span{
+    left:0;
+}
+button.owl-next span{
+    right:0;
+}
+/* =============================
+   CONTACT SECTION DESIGN CSS
+=============================== */
+.contact .heading{
+    text-align:center;
+    font-size:36px;
+    margin-bottom: 30px;
+    color:var(--heading);
+}
+.contact .form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+.contact .form input {
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.contact .form textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    outline: none;
+    height: 130px;
+    resize: none;
+}
+.contact .form input[type="submit"]{
+    width: 30%;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: transparent;
+    border: 2px solid var(--primary);
+    margin: 10px auto 0;
+}
+/* =============================
+   FOOTER SECTION DESIGN CSS
+=============================== */
+.footer{
+    background:#072135;
+    color:#fff;
+    padding:80px 0;
+}
+.footer .d-flex{
+    align-items:flex-start;
+}
+.footer .one{
+    width:40%;
+}
+.footer .two,
+.footer .three{
+    width:20%;
+}
+.footer .footer-box h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.footer-text {
+    margin-top:30px;
+}

@@ -1,0 +1,29 @@
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+// MOBILE MENU
+
+document.querySelector('.mobile-menu').addEventListener('click',function(){
+    document.querySelector('.menu').classList.add('show');
+});
+document.querySelector('.close-btn').addEventListener('click',function(){
+    document.querySelector('.menu').classList.remove('show');
+});
